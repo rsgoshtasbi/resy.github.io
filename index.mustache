@@ -38,25 +38,50 @@
           <article class="profile-menu" id="menu">
             <nav class="menu-navigation">
               <ul class="menu-navigation-list">
-                <li class="menu-navigation-list-item"><a href="#python">Python</a></li>
+                {{#categories}}
+                <li class="menu-navigation-list-item"><a href="#{{index}}">{{name}}</a></li>
+                {{/categories}}
               </ul>
             </nav>
 
-            <div id="python" class="menu-category">
-              <h3 class="menu-category-name">Python</h3>
+            {{#categories}}
+            <div id="{{index}}" class="menu-category">
+              <h3 class="menu-category-name">{{name}}</h3>
+              {{#has_repos_with_images}}
               <ol class="menu-category-list has-images">
+              {{#repos_with_images}}
               <li class="menu-item">
-                <div class="menu-item-info">
-                  <h4 class="menu-item-name">coinbase_python3</h4>
-                  <span class="menu-item-price"><a href="https://github.com/resy/coinbase_python3" target="_blank">GitHub</a></span>
-                  <p class="menu-item-description">Unofficial Coinbase Python3 Client Library</p>
+                <div class="menu-item-info{{^description}} has-no-meta-content{{/description}}">
+                  <h4 class="menu-item-name">{{name}}</h4>
+                  <span class="menu-item-price">{{#website}}<a href="{{website}}" target="_blank">Website</a> &middot; {{/website}}<a href="{{href}}" target="_blank">GitHub</a></span>
+                  {{#description}}
+                  <p class="menu-item-description">{{description}}</p>
+                  {{/description}}
                 </div>
-                <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/coinbase_python3.jpg" />
+                <div class="menu-item-image{{#description}} has-meta-content{{/description}}">
+                  <img src="/repo_images/{{name}}.jpg" />
                 </div>
               </li>
+              {{/repos_with_images}}
               </ol>
+              {{/has_repos_with_images}}
+              {{#has_repos_without_images}}
+              <ol class="menu-category-list">
+              {{#repos_without_images}}
+              <li class="menu-item">
+                <div class="menu-item-info{{^description}} has-no-meta-content{{/description}}">
+                  <h4 class="menu-item-name">{{name}}</h4>
+                  <span class="menu-item-price">{{#website}}<a href="{{website}}" target="_blank">Website</a> &middot; {{/website}}<a href="{{href}}" target="_blank">GitHub</a></span>
+                  {{#description}}
+                  <p class="menu-item-description">{{description}}</p>
+                  {{/description}}
+                </div>
+              </li>
+              {{/repos_without_images}}
+              </ol>
+              {{/has_repos_without_images}}
             </div>
+            {{/categories}}
 
             <a id="btn-view-full-menu" class="btn-view-full-menu" href="http://github.com/resy">View full list of repositories</a>
           </article>
