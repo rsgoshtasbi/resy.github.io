@@ -3,17 +3,17 @@
   },
   "custom": [
     {
-      "name": "coinbase_python3",
-      "homepage": null,
-      "html_url": "https://github.com/resy/coinbase_python3",
-      "description": "Unofficial Coinbase Python3 Client Library",
-      "categories": ["Python"]
-    },
-    {
       "name": "tinyAPI",
       "homepage": null,
       "html_url": "https://github.com/mcmontero/tinyAPI",
       "description": "The Python tiny api Project",
+      "categories": ["Python"]
+    },
+    {
+      "name": "coinbase_python3",
+      "homepage": null,
+      "html_url": "https://github.com/resy/coinbase_python3",
+      "description": "Unofficial Coinbase Python3 Client Library",
       "categories": ["Python"]
     }
   ]
