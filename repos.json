@@ -15,6 +15,13 @@
       "html_url": "https://github.com/resy/coinbase_python3",
       "description": "Unofficial Coinbase Python3 Client Library",
       "categories": ["Python"]
+    },
+    {
+      "name": "The Official Resy Python SDK",
+      "homepage": null,
+      "html_url": "https://github.com/resy/developers/tree/master/python",
+      "description": "The Official Resy Python SDK",
+      "categories": ["Python"]
     }
   ]
 }
