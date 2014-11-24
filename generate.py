@@ -88,6 +88,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
   # Loop over category repos sorted alphabetically (case-insensitive).
   for repo_data in sorted(categories[category_name], key=lambda s: s['name'].lower()):
     name = repo_data['name']
+    image = repo_data['image']
     repo = {
       'name': name,
       'href': repo_data['html_url'],
@@ -95,7 +96,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
       'description': repo_data.get('description', None),
       'image': repo_data['image']
     }
-    if os.path.exists(os.path.join('repo_images', '%s.jpg' % name)):
+    if os.path.exists(os.path.join('repo_images', '%s.jpg' % image)):
       data['repos_with_images'].append(repo)
       data['has_repos_with_images'] = True
     else:
