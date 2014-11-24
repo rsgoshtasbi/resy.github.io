@@ -3,24 +3,24 @@
   },
   "custom": [
     {
-      "name": "tinyAPI",
+      "name": "The Python tiny api Project",
       "homepage": null,
       "html_url": "https://github.com/mcmontero/tinyAPI",
-      "description": "The Python tiny api Project",
+      "description": "A micro-framework developed by Michael Montero for managing the Resy python code base.",
       "categories": ["Python"]
     },
     {
-      "name": "coinbase_python3",
+      "name": "Unofficial Coinbase Python3 Client Library",
       "homepage": null,
       "html_url": "https://github.com/resy/coinbase_python3",
-      "description": "Unofficial Coinbase Python3 Client Library",
+      "description": "A python 3 library supported by Resy enabling the purchase of reservations using bitcoin via a Coinbase wallet.",
       "categories": ["Python"]
     },
     {
       "name": "The Official Resy Python SDK",
       "homepage": null,
       "html_url": "https://github.com/resy/developers/tree/master/python",
-      "description": "The Official Resy Python SDK",
+      "description": "A python SDK for integrating the Resy API.",
       "categories": ["Python"]
     }
   ]
