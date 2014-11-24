@@ -36,7 +36,8 @@ def gh_repo(name):
     name=repo.name,
     homepage=repo.homepage,
     html_url=repo.html_url,
-    description=repo.description
+    description=repo.description,
+    image=repo.image
   )
 
 with codecs.open(index_in, 'r', 'utf-8') as f:
