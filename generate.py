@@ -92,7 +92,8 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
       'name': name,
       'href': repo_data['html_url'],
       'website': repo_data.get('homepage', None),
-      'description': repo_data.get('description', None)
+      'description': repo_data.get('description', None),
+      'image': repo_data['image']
     }
     if os.path.exists(os.path.join('repo_images', '%s.jpg' % name)):
       data['repos_with_images'].append(repo)
